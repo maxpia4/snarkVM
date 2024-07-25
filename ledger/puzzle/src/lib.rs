@@ -229,6 +229,9 @@ impl<N: Network> Puzzle<N> {
         counter: u64,
         minimum_proof_target: Option<u64>,
     ) -> Result<Solution<N>> {
+        debug!(
+            "hello world i'm max!"
+        );
         // Construct the partial solution.
         let partial_solution = PartialSolution::new(epoch_hash, address, counter)?;
         // Compute the proof target.
