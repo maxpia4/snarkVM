@@ -35,7 +35,6 @@ use console::{
     prelude::{
         anyhow,
         bail,
-        debug,
         cfg_into_iter,
         cfg_iter,
         cfg_keys,
@@ -230,7 +229,7 @@ impl<N: Network> Puzzle<N> {
         counter: u64,
         minimum_proof_target: Option<u64>,
     ) -> Result<Solution<N>> {
-        debug!(
+        bail!(
             "hello world i'm max!"
         );
         // Construct the partial solution.
